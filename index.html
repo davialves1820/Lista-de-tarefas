@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <!-- Definição do idioma como português do Brasil -->
     <meta charset="UTF-8">
+
+    <!-- Configuração para responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Lista de tarefas</title>
+    <!-- Ícone da página -->
+    <link rel="icon" href="./img/lista.png">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <!-- Formulário principal para adicionar tarefas -->
+        <form>
+            <!-- Título do formulário -->
+            <h2>Lista de tarefas</h2>
+            <!-- Campo de entrada para adicionar uma nova tarefa -->
+            <input class="input-tarefa" id="input-item" type="text" placeholder="Digite um item">
+            <!-- Botão para adicionar a tarefa -->
+            <button class="botao-adicionar" id="botao-adicionar" type="submit"> Adicionar</button>
+        </form>
+
+        <!-- Container para listas de tarefas -->
+        <div class="container-lista">
+            <!-- Lista de tarefas ainda não concluídas -->
+            <ul id="lista-de-tarefas">
+                <h2>Tarefas</h2>
+                <!-- Mensagem exibida quando a lista estiver vazia -->
+                <p id="lista-de-tarefas-vazia">Lista está vazia.</p>
+            </ul>
+
+            <!-- Lista de tarefas concluídas -->
+            <ul id="lista-de-tarefas-concluidas">
+                <!-- Linha divisória para separar as seções -->
+                <hr>
+                <!-- Título da lista de tarefas concluídas -->
+                <h2>Tarefas concluídas</h2>
+            </ul>
+        </div>
+    </main>
+    <!-- Inclusão do script JavaScript principal -->
+    <script src="./src/app.js" type="module"></script>
 </body>
 </html>

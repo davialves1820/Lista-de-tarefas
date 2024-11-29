@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@100..900&family=Jaro:opsz@6..72&family=Krona+One&family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@100..900&family=Jaro:opsz@6..72&family=Krona+One&family=Numans&family=Protest+Revolution&display=swap');
+
+/* Importação de fontes personalizadas do Google Fonts */
+
+/* Definição de variáveis CSS para cores, gradientes e fontes */
+:root {
+    --degrade-body: linear-gradient(45deg,#6439FF,#4F75FF,#00CCDD,#7CF5FF);
+    --cor-de-fundo-main:  #7CF5FF;
+    --cor-de-fundo-botao: #64A9E5;
+    --cor-nome-botao: #FFFFFF;
+    --fonte-principal: "Jaro", sans-serif;
+    --fonte-secundaria: "Protest Revolution", sans-serif;
+}
+
+/* Reset básico de margens, espaçamentos e box-sizing */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do corpo da página */
+body {
+    height: 100vh; /* Altura total da viewport */
+    width: 100%; /* Largura total */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção vertical */
+    align-items: center; /* Centralizar itens horizontalmente */
+    justify-content: center; /* Centralizar itens verticalmente */
+    background: var(--degrade-body); /* Gradiente como fundo */
+    background-size: 300% 300%; /* Tamanho do gradiente para animação */
+    animation: color 12s ease-in-out infinite; /* Animação do gradiente */
+}
+
+/* Animação do gradiente no background */
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/* Estilização do container principal */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px; /* Espaço entre elementos */
+    background-color: var(--cor-de-fundo-main);
+    padding: 54px;
+    width: 440px; /* Largura fixa */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Título principal */
+h2 {
+    color: #2E3B47;
+    font-family: var(--fonte-principal);
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+/* Parágrafo */
+p {
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #4F75FF;
+}
+
+/* Input de tarefas */
+.input-tarefa {
+    padding: 12px 16px; 
+    border-radius: 24px;
+    border: 1px solid black;
+    width: 307px;
+}
+
+/* Placeholder estilizado */
+.input-tarefa::placeholder {
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Botão de adicionar tarefas */
+.botao-adicionar {
+    padding: 12px 16px;
+    border-radius: 24px;
+    background-color: var(--cor-de-fundo-botao);
+    color: var(--cor-nome-botao);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao-adicionar:hover {
+    cursor: pointer;
+    background-color: var(--cor-nome-botao);
+    color: var(--cor-de-fundo-botao);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Lista de tarefas */
+.container-lista {
+    width: 100%;
+}
+
+#lista-de-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#lista-de-tarefas-vazia {
+    display: block;
+}
+
+/* Container de tarefas */
+.container-tarefa-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-tarefa-lista div {
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilo de lista sem marcador */
+ul {
+    list-style-type: none;
+}
+
+/* Checkbox customizado */
+.checkbox-button {
+    display: none; /* Esconde o botão real */
+}
+
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: #f8efdd;
+    border: 1px solid #0078A8;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Checkbox marcado */
+.checked {
+    background-color: #00CCDD;
+    position: relative;
+}
+
+/* Marca de seleção no checkbox */
+.checkbox-customizado.checked::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+    border-top: 2px solid var(--cor-nome-botao);
+    border-left: 2px solid var(--cor-nome-botao);
+    transform: rotate(-140deg);
+}
+
+/* Botão de tarefas */
+.item-lista-button {
+    border: none;
+    background-color: transparent;
+}
+
+/* Efeito ao passar o mouse no botão */
+.item-lista-button:hover img {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+/* Estilo para a data */
+.texto-data {
+    font-size: 12px;
+    margin-left: 24px;
+    line-height: 20px;
+}
+
+/* Linha de separação */
+hr {
+    border: none;
+    border-bottom: 3px dotted #2E3B47;
+    margin-bottom: 20px;
+}
+
+/* Lista de tarefas concluídas (inicialmente escondida) */
+#lista-de-tarefas-concluidas {
+    display: none;
+}
