@@ -2,7 +2,7 @@
 Este é um projeto de uma lista de tarefas funcional que permite ao usuário gerenciar atividades. Ele inclui funcionalidades para adicionar, editar, excluir, e verificar tarefas concluídas ou pendentes. A lista de tarefas possui persistência, garantindo que os dados permaneçam mesmo após o navegador ser fechado.
 
 ## Estrutura do Projeto
-img/: Pasta que armazena imagens utilizadas no projeto (se necessário).
+- img/: Pasta que armazena imagens utilizadas no projeto (se necessário).
 
 src/: Contém os arquivos JavaScript responsáveis pela lógica do projeto.
 
