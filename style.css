@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@100..900&family=Jaro:opsz@6..72&family=Krona+One&family=Numans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@100..900&family=Jaro:opsz@6..72&family=Krona+One&family=Numans&family=Protest+Revolution&display=swap');
+
 
 /* Importação de fontes personalizadas do Google Fonts */
 
@@ -10,7 +10,6 @@
     --cor-de-fundo-botao: #64A9E5;
     --cor-nome-botao: #FFFFFF;
     --fonte-principal: "Jaro", sans-serif;
-    --fonte-secundaria: "Protest Revolution", sans-serif;
 }
 
 /* Reset básico de margens, espaçamentos e box-sizing */
@@ -70,7 +69,7 @@ h2 {
 
 /* Parágrafo */
 p {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -88,7 +87,7 @@ p {
 
 /* Placeholder estilizado */
 .input-tarefa::placeholder {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-principal);
     text-align: center;
     font-size: 16px;
     line-height: 19px;
