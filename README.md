@@ -27,7 +27,8 @@ Este é um projeto de uma lista de tarefas funcional que permite ao usuário ger
 - Verificar Tarefas Vazias: Valida para garantir que nenhuma tarefa seja deixada em branco.
 
 ## Como Executar o Projeto
-Através do link: 
+Através do link: **https://lista-de-tarefas-sandy-nine.vercel.app/**
 
 ## Imagem do Projeto
-(Inclua aqui uma captura de tela da interface da lista de tarefas, caso disponível.)
+![image](https://github.com/user-attachments/assets/131a3cbb-3984-4910-b445-bb27616378fa)
+
